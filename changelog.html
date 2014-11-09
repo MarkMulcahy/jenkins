@@ -55,13 +55,56 @@ Upcoming changes</a>
 <!-- Record your changes in the trunk here. -->
 <div id="trunk" style="display:none"><!--=TRUNK-BEGIN=-->
 <ul class=image>
-  <li class=>
+  <li class=bug>
+    Basic Authentication in combination with Session is broken
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-25144">issue 25144</a>)
+  <li class=bug>
+    Some plugins broken since 1.584 if they expected certain events to be fired under a specific user ID.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-25400">issue 25400</a>)
+  <li class=bug>
+    Fixed various real or potential resource leaks.
+    (<a href="https://github.com/jenkinsci/jenkins/pull/1434">pull request 1434</a>)  
+  <li class=fre>
+    Expose AbstractProject.AbstractProjectDescriptor#validateLabelExpression for plugins.
+    (<a href="https://github.com/jenkinsci/jenkins/pull/1456">pull request 1456</a>)
+  <li class=fre>
+    Aggregate multiple FormValidations into one.
+    (<a href="https://github.com/jenkinsci/jenkins/pull/1458">pull request 1458</a>)
 </ul>
 </div><!--=TRUNK-END=-->
 
 <!-- these changes are controlled by the release process. DO NOT MODIFY -->
 <div id="rc" style="display:none;"><!--=BEGIN=-->
-<h3><a name=v1.586>What's new in 1.586</a> <!--=DATE=--></h3>
+<h3><a name=v1.589>What's new in 1.589</a> <!--=DATE=--></h3>
+<ul class=image>
+  <li class=>
+</ul>
+</div><!--=END=-->
+<h3><a name=v1.588>What's new in 1.588</a> (2014/11/02)</h3>
+<ul class=image>
+  <li class=bug>
+    JNA error in <code>WindowsInstallerLink.doDoInstall</code>.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-25358">issue 25358</a>)
+  <li class=bug>
+    Unnecessarily slow startup time with a massive number of jobs.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-25473">issue 25473</a>)
+  <li class=bug>
+    Custom workspace option did not work under some conditions.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-25221">issue 25221</a>)
+</ul>
+<h3><a name=v1.587>What's new in 1.587</a> (2014/10/29)</h3>
+<ul class=image>
+  <li class=bug>
+    Queue didn't always leave a trail for cancelled items properly
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-25314">issue 25314</a>)
+  <li class=bug>
+    JNA update for deprecated JNA-POSIX library.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-24527">issue 24527</a>)
+  <li class='major bug'>
+    Introduced slave-to-master security mechanism to defend a master from slaves.
+    (<a href="http://jenkins-ci.org/security-144">SECURITY-144</a>)
+</ul>
+<h3><a name=v1.586>What's new in 1.586</a> (2014/10/26)</h3>
 <ul class=image>
   <li class=rfe>
     Bumping up JNA to 4.10. This is potentially a breaking change for plugins that depend on JNA 3.x
@@ -77,7 +120,6 @@ Upcoming changes</a>
     Existing <code>FileParameter</code>s should be handled as different values to avoid merging of queued builds
     (<a href="https://issues.jenkins-ci.org/browse/JENKINS-19017">issue 19017</a>)  
 </ul>
-</div><!--=END=-->
 <h3><a name=v1.585>What's new in 1.585</a> (2014/10/19)</h3>
 <ul class=image>
   <li class=bug>
