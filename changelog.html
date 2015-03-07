@@ -55,6 +55,33 @@ Upcoming changes</a>
 <!-- Record your changes in the trunk here. -->
 <div id="trunk" style="display:none"><!--=TRUNK-BEGIN=-->
 <ul class=image>
+  <li class=>
+</ul>
+</div><!--=TRUNK-END=-->
+
+<!-- these changes are controlled by the release process. DO NOT MODIFY -->
+<div id="rc" style="display:none;"><!--=BEGIN=-->
+<h3><a name=v1.601>What's new in 1.601</a> <!--=DATE=--></h3>
+<ul class=image>
+  <li class="major bug">
+    Regression with environment variables in 1.600.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-27188">issue 27188</a>)
+  <li class="major bug">
+    Errors with concurrent matrix builds since 1.597.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-26739">issue 26739</a>)
+  <li class=bug>
+    Errors in Dashboard View plugin since 1.597.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-26690">issue 26690</a>)
+  <li class="rfe">
+    Map Queue.Item.id onto Run
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-27096">issue 27096</a>)
+</ul>
+</div><!--=END=-->
+<h3><a name=v1.600>What's new in 1.600</a> (2015/02/28)</h3>
+<ul class=image>
+  <li class="major bug">
+    Fixes to multiple security vulnerabilities.
+    (<a href="https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-02-27">security advisory</a>)
   <li class="rfe">
     JDK auto-installer for Mac OSX
   <li class=bug>
@@ -66,13 +93,11 @@ Upcoming changes</a>
   <li class=bug>
     Build history text field wrap fails when containing markup
     (<a href="https://issues.jenkins-ci.org/browse/JENKINS-26406">issue 26406</a>)
-
+  <li class=bug>
+    Maven build step fail to launch mvn process when special chars are present in build variables.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-26684">issue 26684</a>)
 </ul>
-</div><!--=TRUNK-END=-->
-
-<!-- these changes are controlled by the release process. DO NOT MODIFY -->
-<div id="rc" style="display:none;"><!--=BEGIN=-->
-<h3><a name=v1.599>What's new in 1.599</a> <!--=DATE=--></h3>
+<h3><a name=v1.599>What's new in 1.599</a> (2015/02/16)</h3>
 <ul class=image>
   <li class=bug>
     Errors in some Maven builds since 1.598.
@@ -96,7 +121,6 @@ Upcoming changes</a>
     Allow OldDataMonitor to discard promoted-build-plugin Promotions
     (<a href="https://issues.jenkins-ci.org/browse/JENKINS-26718">issue 26718</a>)
 </ul>
-</div><!--=END=-->
 <h3><a name=v1.598>What's new in 1.598</a> (2015/01/25)</h3>
 <ul class=image>
   <li class=bug>
